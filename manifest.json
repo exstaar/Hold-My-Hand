@@ -1,0 +1,27 @@
+{ 
+  "short_name": "Hand",
+  "name": "HOLD MY HAND",
+  "icons": [
+    {
+      "src": "source/images/hand.gif",
+      "type": "image/png",
+      "sizes": "200x260"
+    },
+    {
+        "src": "source/images/hand.gif",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "source/images/hand.gif",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#D7D7D7",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#090a09"
+
+}

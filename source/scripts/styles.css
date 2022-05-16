@@ -1,0 +1,88 @@
+/* Style Sheet: 07/4/2021 */
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+      @viewport {
+        width: auto;
+        height: auto;
+        orientation: portrait;
+      }
+    .tcontainer {
+        width: 100%;
+        height: auto;
+
+        overflow: hidden;
+    }
+    
+    body { 
+      overflow-x: hidden;
+      width: auto;
+      height: auto;
+    }
+
+    .ticker-wrap {
+        width: 100%;
+        padding-left: 100%;
+        background-color: #090a0a;
+    }
+    @keyframes ticker {
+        100% {
+            transform: translate3d(-100%, 0, 0);
+        }
+    }
+    /* Ticker Settings */
+    .ticker-move {
+        display: inline-block;
+        white-space: nowrap;
+        padding-right: 100%;
+        animation-timing-function: linear;
+        animation: ticker 30s infinite;
+    }
+    .ticker-move:hover {
+        animation-play-state: paused;
+    }
+    .ticker-item {
+        display: inline-block;
+        padding: 0 10px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight:700;
+        text-decoration: underline;
+        text-decoration-color: #eb3434;
+    }
+    /* Text Settings */
+    
+    p-1 {
+      font-family: 'Roboto', sans-serif;
+      font: weight 100px;;
+      font-size: 13px;
+    
+    }
+    p-3 {
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight:700;
+      user-select: none;
+      text-align: center;
+    }
+   /* Cursor Settings */
+   p-3:hover {
+    color: #eb3434
+   }
+    html:hover{
+      color: #eb3434;
+      cursor: url(cursor/openhand.gif), auto;
+    }
+    a:hover{
+      color: #eb3434;
+    }
+    div:hover{
+      cursor: url(cursor/openhand.gif), pointer;
+    }
+    a:active{
+      cursor: url(cursor/active.gif), pointer;
+    }
+    html:active{
+      cursor: url(cursor/active.gif), auto;
+    }
+    div:active{
+      cursor: url(cursor/active.gif), pointer;
+    }
